@@ -1,5 +1,7 @@
-package bicycles;
+package bicycles.specification;
 
+import bicycles.Bicycle;
+import bicycles.BicycleType;
 import bicycles.rides.BikeRideOne;
 import bicycles.specification.BicycleFromSpec;
 import bicycles.specification.BicycleSpecification;
@@ -19,6 +21,6 @@ public class TandemBikeSpecTest {
             assertEquals(tandemBikeSpec.getAccelerationSpeed(), 12);
             assertEquals(tandemBikeSpec.getBrakeSpeed(), -7);
             assertEquals(tandemBikeSpec.getBicycleType(), BicycleType.Tandem);
-            assertEquals(bikeRideOne.currentSpeed(), 34);
+            assertEquals(bikeRideOne.currentSpeed(), 46);
         }
 }

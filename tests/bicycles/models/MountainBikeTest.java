@@ -1,17 +1,18 @@
-package bicycles;
+package bicycles.models;
 
-import bicycles.models.RoadBike;
+import bicycles.models.MountainBike;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RoadBikeTest {
+public class MountainBikeTest {
     @Test
     public void roadBikeSpeed() {
-        RoadBike roadBike = new RoadBike();
+        MountainBike roadBike = new MountainBike();
         roadBike.accelerate();
         roadBike.brake();
 
-        assertEquals(roadBike.currentSpeed(), 7);
+        assertEquals(roadBike.currentSpeed(), 2);
     }
 }
+
