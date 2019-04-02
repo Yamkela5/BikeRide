@@ -14,12 +14,11 @@ public class MountainBikeSpecTest {
     public void mountainBikeSpec() {
         BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -3, BicycleType.MountainBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
-        BikeRideOne bikeRideOne = new BikeRideOne(bicycle);
-        bikeRideOne.ride();
+
 
         assertEquals(mountainBikeSpec.getAccelerationSpeed(), 5);
         assertEquals(mountainBikeSpec.getBrakeSpeed(), -3);
         assertEquals(mountainBikeSpec.getBicycleType(), BicycleType.MountainBike);
-        assertEquals(bikeRideOne.currentSpeed(), 19);
+
     }
 }
